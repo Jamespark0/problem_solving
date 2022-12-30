@@ -12,9 +12,7 @@ def dyanmicMonteCarlo(num_A: int, num_B:int, period:int) -> list:
     iteration: int = period // 2;
 
     def pick_random() -> list:
-        '''
-            return reactant, rate k, and product
-        '''
+        '''return reactant, rate k, and product'''
         # randomly pick a number between 0 and 1 to decide the probability
         threshold = next(randomNumBuffer);
         if threshold <= particle_num['A']/sum(particle_num.values()):
